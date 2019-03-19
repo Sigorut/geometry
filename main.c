@@ -17,6 +17,8 @@ int main()
     int i = 0, r;
     printf("Vvedite 'circle(x,y,r)'\n \n");
     cin >> ch;
+    puts(ch);
+    puts(f);
     memset(fg, 0, sizeof(fg));
     memset(xch, 0, sizeof(xch));
     memset(ych, 0, sizeof(ych));
@@ -28,14 +30,14 @@ int main()
         }
         memset(ch, 0, sizeof(ch));
         memset(fg, 0, sizeof(fg));
-        printf("Error, please Enter correct figure 'circle(x,y,r)'\n");
+        printf("Error, please Enter 'circle(x,y,r)'\n");
         cin >> ch;
         Fillfgs(fg, ch);
+        puts(fg);
     }
     Fillxch(xch, ch, i);
     Fillych(ych, ch, i);
     Fillrch(rch, ch, i);
-    puts(ch);
     r = atoi(rch);
     s = r * r * M_PI;
     printf("Area = %.4f", s);
