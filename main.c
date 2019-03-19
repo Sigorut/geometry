@@ -7,6 +7,7 @@ void Fillych(char A[], char h[], int& i);
 void Fillrch(char A[], char h[], int& i);
 int main() {
 	char ch[100], xch[10], ych[10], rch[10], fg[10];
+	double s = 0, p = 0;
 printf("Vvedite 'circle(x,y,r)' \n"
 gets(h);
 memset (fg,0,sizeof(fg));
@@ -20,6 +21,11 @@ Fillrch (rch,h,i);
 x=atoi(xch);
 y=atoi(ych);
 r=atoi(rch);
+puts(ch);
+printf("\n");
+s=r*r*M_PI;
+printf("Area = %.4f",s);
+p=2*M_PI*r;
 }
 void Fillfg(char A[], char h[], int& i) {
 	int k = 0;
