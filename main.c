@@ -17,8 +17,6 @@ int main()
     int i = 0, r;
     printf("Vvedite 'circle(x,y,r)'\n \n");
     cin >> ch;
-    puts(ch);
-    puts(f);
     memset(fg, 0, sizeof(fg));
     memset(xch, 0, sizeof(xch));
     memset(ych, 0, sizeof(ych));
