@@ -31,7 +31,7 @@ int main()
         printf("Error, please Enter 'circle(x,y,r)'\n");
         cin >> ch;
         Fillfgs(fg, ch);
-        puts(fg);
+        puts(ch);
     }
     Fillxch(xch, ch, i);
     Fillych(ych, ch, i);
